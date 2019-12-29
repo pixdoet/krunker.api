@@ -38,11 +38,26 @@
     </style>
   </head>
   <body>
+   <script>        
+var urlParams = new URLSearchParams(window.location.search),
+    backgroundcol = urlParams.get('backgroundcol');
+    function col(){
+
+    if (backgroundcol == 'default'){
+     return '#010401'
+    }else{
+     return backgroundcol
+    }
+    }
+    $('#container').css({
+	'background' : `${col()}`
+});
+   </script>
     <div id="container"></div>
     <script src="https://krunker.io/libs/dat.gui.min.js"></script>
     <script src="https://krunker.io/libs/zip.js"></script>
     <script src="https://krunker.io/libs/zip-ext.js"></script>
-    <script src="items.js"></script>
+    <script src="../build/items.ob.js"></script>
     <script src="viewer.js" type="text/javascript"></script>
     <script type="text/javascript">
       $("canvas").css({
