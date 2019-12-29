@@ -38,7 +38,20 @@
     </style>
   </head>
   <body>
-   <script>        
+   
+    <div id="container"></div>
+    <script src="https://krunker.io/libs/dat.gui.min.js"></script>
+    <script src="https://krunker.io/libs/zip.js"></script>
+    <script src="https://krunker.io/libs/zip-ext.js"></script>
+    <script src="../build/items.ob.js"></script>
+    <script src="viewer.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $("canvas").css({
+        width: "100%",
+        height: "100%"
+      });
+    </script>
+	    <script>        
 var urlParams = new URLSearchParams(window.location.search),
     backgroundcol = urlParams.get('backgroundcol');
     function col(){
@@ -53,17 +66,5 @@ var urlParams = new URLSearchParams(window.location.search),
 	'background' : `${col()}`
 });
    </script>
-    <div id="container"></div>
-    <script src="https://krunker.io/libs/dat.gui.min.js"></script>
-    <script src="https://krunker.io/libs/zip.js"></script>
-    <script src="https://krunker.io/libs/zip-ext.js"></script>
-    <script src="../build/items.ob.js"></script>
-    <script src="viewer.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      $("canvas").css({
-        width: "100%",
-        height: "100%"
-      });
-    </script>
   </body>
 </html>
