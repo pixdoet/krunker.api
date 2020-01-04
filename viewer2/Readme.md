@@ -1,6 +1,6 @@
 ### Url parmas
-``pul``:``WEapon Pulsing``,
-``skinp``:``Skin texture id/index``,
+//``pul``:``WEapon Pulsing``,
+//``skinp``:``Skin texture id/index``,
 ``class``:``Item model id/index``,
 ``editor``:``For editing purpost``, //not out... work still in progess
 ``fr``:``Animation frames``,
