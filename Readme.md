@@ -7,7 +7,7 @@
 ## Do not donwload items.ob.js unless you want to update it yourself each time krunker has an update
 
 ```html
-  <!-- External resources -->
+    &lt;!-- External resources --&gt;
     <script type="text/javascript" src="https://hoodgail.github.io/krunker.api/build/items.ob.js"></script>
     <script type="text/javascript" src="https://hoodgail.github.io/krunker.api/build/krunkerapi.js" defer></script>
     ```   
@@ -22,6 +22,6 @@
 Then i suggest you to add  <script>var krunkerapi_initcors = true;</script> before you load krunkerapi.js to avoid any cors policy issues
 But note that it will not get the assets from ``assets.krunker.io/`` it will get them from ``hoodgail.github.io/krunker_assets/``
 ```html
-    <!-- add this before you load krunkerapi.js-->
+        &lt;!-- add this before you load krunkerapi.js--&gt;
     <script>var krunkerapi_initcors = true;</script>
     ```
