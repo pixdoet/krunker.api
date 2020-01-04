@@ -1,0 +1,143 @@
+
+  
+<!DOCTYPE html>
+<html>
+ <head>
+   <script  src="../build/items.ob.js"></script>
+  <title></title>
+  <script src="../jq.js"></script>
+  <link rel="stylesheet" href="../files/bootstrap.min.css" />
+  <script src="../files/bootstrap.min.js"></script>
+  <script src="../build/krunkerapi.js" defer></script>
+  <style>
+  #result {
+   position: absolute;
+   width: 100%;
+   max-width:870px;
+   cursor: pointer;
+   overflow-y: auto;
+   max-height: 400px;
+   box-sizing: border-box;
+   z-index: 1;
+  }
+  .link-class:hover{
+   background-color:#f1f1f1;
+  }
+   .dropdown-item{
+    display: block;
+    margin: 10px;
+   }
+   .dropdown{
+    color: #a19adf;
+   }
+   .dropdown-menu{
+    background: #282c34;}
+   .btn{
+    background: #282c34;
+   }
+  </style>
+   <!-- External resources -->
+
+
+
+ 
+ </head>
+ <body onload=" displayData();">
+  <br /><br />
+  <div class="container" style="width:900px;">
+   <h2 align="center">Weapons data</h2>
+   <h3 align="center">__</h3>   
+   <br /><br />
+   <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Sort By
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" onclick="displayData(0)">+50</a>
+    <a class="dropdown-item" onclick="displayData(50)">+100</a>
+    <a class="dropdown-item" onclick="displayData(150)">+200</a>
+   <a class="dropdown-item" onclick="displayData(350)">+400</a>
+   <a class="dropdown-item" onclick="displayData(550)">+600</a>
+   <a class="dropdown-item" onclick="displayData();">all</a>
+  </div>
+</div>
+   <div align="center">
+    <input type="text" value="leine" onload=" displayData();" onkeyup="searchFunction() "name="search" id="search" class="form-control" />
+   </div>
+   <ul class="list-group" id="result"></ul>
+   <br />
+  </div>
+
+ </body>
+</html>
+
+<script>
+ 
+ $('#search').attr('placeholder',`Search for ${krunkerapi_items.length} skins`)
+ var rarityColor = ['#b2f252', '#2196F3', '#E040FB', '#FBC02D', '#ed4242', '#171717', '#fff53d'];
+
+ 
+function displayData(index){
+
+
+  $('#result').html('');
+  $('#state').val('');
+  var searchField = $('#search').val();
+  var expression = new RegExp(searchField, "i");
+var data = krunkerapi_items;
+ 
+console.log(indexf())
+ function indexf(){
+  if(index == null || index == undefined ){
+     return 0+1
+     }else{
+  return index-1
+  }
+ }
+ function ifnull(){
+    if(indexf() == null || indexf() == undefined || indexf() == 1){
+     return data.length+2
+     }else{
+  return 50
+  }
+ }
+ for (var i = indexf(); i <indexf()+ifnull(); i++){
+ //console.log(i)
+      var rarity = data[i].rarity;
+     $('#result').append(`<li id="list" class="list-group-item link-class"><img src="${getPrev(i)}" height="40" width="40" class="img-thumbnail" /><a href="https://krunker.io/social.html?p=itemsales&i=${i}" style="color:${rarityColor[rarity]};"> ${data[i].name}</a> | <span class="text-muted">index: ${i}</span> | <span class="text-muted">Creator: ${data[i].creator}</span></li>`);
+
+   };   
+
+
+
+
+};
+
+
+  function searchFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('search');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById('result');
+    li = ul.getElementsByTagName('li');
+
+    for(i=0 ; i< li.length; i++){
+        a = li[i].getElementsByTagName('a')[0];
+        if(a.innerHTML.toUpperCase().indexOf(filter) > -1){
+            li[i].style.display = "";
+        }
+
+        else{
+            li[i].style.display = 'none';
+        }
+    }
+    var input = document.getElementById('search');
+ if(input.value){
+  
+    }else{
+   
+    }
+   index = krunkerapi_items.length;
+}
+
+</script>

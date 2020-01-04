@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="../jq.js"></script>
+  <script  src="../build/items.ob.js"></script>
+  <script src="../build/krunkerapi.js" defer></script>
+<link rel="stylesheet"
+      href="../files/atom-one-dark.min.css">
+<script src="../files/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<title>Variables</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+
+
+
+  <pre id="code-pre">
+  <a class="extext">We will be using this skins as an exaple </a>
+  <a class="extext">Leing, made by:Hoodgail </a>
+  <img class="eximg" src="https://assets.krunker.io/textures/previews/weapons/weapon_1_43.png">
+  <a class="codea">Getting Preview url</a>
+<code  contenteditable="true" class="js">
+getPrev( 302 );
+//it will return the preview image of it
+"https://assets.krunker.io/textures/previews/weapons/weapon_1_43.png"
+</code>
+ <a class="codea">Getting Preview by skin name url</a><strong class="red">REMOVED</strong>
+<code  contenteditable="true" class="js">
+getPrevByName( leine );
+//it will return the preview image of it
+"https://assets.krunker.io/textures/previews/weapons/weapon_1_43.png"
+</code>
+<a class="codea">Getting texture skin url</a>
+<code  contenteditable="true" class="js">
+getTex( 302 );
+//it will return the priview image of it
+"https://assets.krunker.io/textures/weapons/skins/weapon_1_43.png"
+</code>
+<a class="codea">Getting model url</a>
+<code  contenteditable="true" class="js">
+getskinModel( 302 );
+//it will return the 3d model url of the requested item
+"https://assets.krunker.io/models/weapons/weapon_1.obj"
+</code>
+<a class="codea">Displaying an item in 3d</a><a onclick="getIframe3d(302,'#010401')" class="green test">TRY IT</a>
+<code  contenteditable="true" class="js">
+getIframe3d(302,'#010401')
+//it will popup the 3d model of the item, just like the viewer but better
+//click the try it button to see
+//u can also pick background color the one i chose was #010401
+</code>
+<a class="codea">Getting rarities color</a>
+<code  contenteditable="true" class="js">
+getRaritiesCol('relic')
+//it will return the color of the rarity which is #ed4242
+"#ed4242"
+</code>
+
+
+ </pre>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+code {
+    border-radius: 6px;
+    padding: 40px;
+}
+
+.codea {
+    background: #605a91;
+    margin: 10px;
+    color: ;
+    padding: 10px;
+    color: white;
+    border-radius: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.extext {
+    color: #abb2bf;
+    font-size: 20px;
+    background: #282c34;
+    display: block;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 15px;
+}
+
+.eximg {
+    background: #282c34;
+    margin: 30px;
+    border-radius: 30px;
+}
+li{
+        margin-bottom: 13px;
+}
+
+body {
+    background: #3e475a;
+}
+
+.red {
+    color: #ff6868;
+}
+
+.green {
+    color: #5eff5e;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.test {
+    padding: 10px;
+    background: #605a91;
+    border-radius: 10px;
+}
