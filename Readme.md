@@ -10,8 +10,7 @@
   <!-- External resources -->
     <script type="text/javascript" src="https://hoodgail.github.io/krunker.api/build/items.ob.js"></script>
     <script type="text/javascript" src="https://hoodgail.github.io/krunker.api/build/krunkerapi.js" defer></script>
-    ```
-    
+    ```   
     
 #   If you are using this library for 3d perpuses
 
