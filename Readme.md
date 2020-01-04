@@ -6,11 +6,11 @@
     
 ## Do not donwload items.ob.js unless you want to update it yourself each time krunker has an update
 
-``html
+```html
     &lt;!-- External resources --&gt;
     <script type="text/javascript" src="https://hoodgail.github.io/krunker.api/build/items.ob.js"></script>
-    <script type="text/javascript" src="https://hoodgail.github.io/krunker.api/build/krunkerapi.js" defer></script>  `` 
-    
+    <script type="text/javascript" src="https://hoodgail.github.io/krunker.api/build/krunkerapi.js" defer></script>  ``` 
+
     
 #   If you are using this library for 3d perpuses
 
