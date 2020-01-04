@@ -9,8 +9,8 @@
 ```html
     &lt;!-- External resources --&gt;
     <script type="text/javascript" src="https://hoodgail.github.io/krunker.api/build/items.ob.js"></script>
-    <script type="text/javascript" src="https://hoodgail.github.io/krunker.api/build/krunkerapi.js" defer></script>
-    ```   
+    <script type="text/javascript" src="https://hoodgail.github.io/krunker.api/build/krunkerapi.js" defer></script>  ``` 
+    
     
 #   If you are using this library for 3d perpuses
 
@@ -23,5 +23,5 @@ Then i suggest you to add  <script>var krunkerapi_initcors = true;</script> befo
 But note that it will not get the assets from ``assets.krunker.io/`` it will get them from ``hoodgail.github.io/krunker_assets/``
 ```html
         &lt;!-- add this before you load krunkerapi.js--&gt;
-    <script>var krunkerapi_initcors = true;</script>
-    ```
+    <script>var krunkerapi_initcors = true;</script>  ```
+    
